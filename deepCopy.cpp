@@ -35,6 +35,14 @@ public:
         strcpy(name, other.name);
         cout << "Copy constructor called for " << name << " with health " << *health << endl;
     }
+
+    // destructor
+    ~Hero()
+    {
+        delete health; // Free memory allocated for health
+        delete[] name; // Free memory allocated for name
+        cout << "Destructor called for " << name << endl;
+    }
 };
 
 int main()
