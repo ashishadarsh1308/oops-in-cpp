@@ -1,4 +1,4 @@
-// making single inheritance
+// making Multi-level inheritance
 #include <iostream>
 using namespace std;
 
