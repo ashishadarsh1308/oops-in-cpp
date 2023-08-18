@@ -3,7 +3,7 @@ using namespace std;
 
 class Human
 {
-private:
+public:
     int age;
     int weight;
     int height;
@@ -23,10 +23,7 @@ public:
     {
         height = newHeight;
     }
-    int getAge()
-    {
-        return this->age;
-    }
+
     int getWeight()
     {
         return this->weight;
@@ -37,7 +34,7 @@ public:
     }
 };
 
-class Male : public Human
+class Male : private Human
 {
 public:
     int bmi;
@@ -46,6 +43,14 @@ public:
     int getBmi()
     {
         return this->bmi;
+    }
+    int getAge()
+    {
+        return this->age;
+    }
+    void setAge(int newAge)
+    {
+        age = newAge;
     }
     void setBmi(int newBmi)
     {
@@ -58,12 +63,12 @@ int main()
     Male Bhaskar;
 
     Bhaskar.setAge(20);
-    Bhaskar.setWeight(60);
-    Bhaskar.setHeight(5.8);
+    // Bhaskar.setWeight(60);
+    // Bhaskar.setHeight(5.8);
     Bhaskar.setBmi(20);
 
     cout << "Age: " << Bhaskar.getAge() << endl;
-    cout << "Weight: " << Bhaskar.getWeight() << endl;
-    cout << "Height: " << Bhaskar.getHeight() << endl;
+    // cout << "Weight: " << Bhaskar.getWeight() << endl;
+    // cout << "Height: " << Bhaskar.getHeight() << endl;
     cout << "BMI: " << Bhaskar.getBmi() << endl;
 }

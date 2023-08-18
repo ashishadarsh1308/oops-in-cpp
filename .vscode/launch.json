@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/hp/Desktop/Code++/DSA and ALGO/oops in cpp",
-      "program": "c:/Users/hp/Desktop/Code++/DSA and ALGO/oops in cpp/build/Debug/outDebug",
+      "cwd": "c:/Users/hp/Desktop/Code++/DSA and ALGO/oops in cpp/output",
+      "program": "c:/Users/hp/Desktop/Code++/DSA and ALGO/oops in cpp/output/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
